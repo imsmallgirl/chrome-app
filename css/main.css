@@ -1,0 +1,237 @@
+*{
+    font-family: 'SUIT';
+    box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    color :#fff;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+body {
+    height: 100vh;
+}
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation: bgfade .5s;
+}
+
+@-webkit-keyframes bgfade{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#saying {
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+#saying-quote {
+    font-weight: 500;
+}
+
+#saying-author{
+    font-size: 10px;
+    opacity: 0;
+    animation: sayingoff .3s forwards;
+}
+
+#saying-author.sayingon{
+    opacity: 1;
+    animation: sayingon .3s forwards;
+}
+
+@-webkit-keyframes sayingon{
+    0%{
+        margin-top: 0px;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 10px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes sayingoff{
+    0%{
+        margin-top: 10px;
+        opacity: 1;
+    }
+    100%{
+        margin-top: 0px;
+        opacity: 0;
+    }
+}
+
+#clock-hello{
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+#clock_text{
+    font-size: 50px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    background-color: rgba(250,250,250,0.3);
+    border-radius: 50px;
+}
+
+#hello_text {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#logout-form .logout-btn {
+    font-weight: bold;
+    font-size: 10px;
+    border: none;
+    background-color:transparent;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: #267dff;
+    color:#fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#logout-form .logout-btn:hover{
+    background-color: rgba(38, 125, 255, .7);
+}
+
+#todo-listbtn {
+    position: absolute;
+    bottom: 0;
+    right:75px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(250,250,250,0.7);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    margin: 30px;
+    cursor: pointer;
+    transition: .3s;
+    z-index: 4;
+}
+
+#todo-listbtn.todobtnon{
+    background-color: #fff;
+}
+
+#todo-listbtn:hover {
+    background-color: #fff;
+}
+
+#todo-listbtn i{
+    color:#222;
+    font-size: 18px;
+}
+
+#todo {
+    opacity: 0;
+    padding: 10px 20px 30px 20px;
+    width: 200px;
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    z-index: 3;
+    background-color: rgba(250,250,250,0.9);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.2);
+    animation: downtodo 1s forwards;
+}
+
+#todo.uptodo{
+    animation: uptodo 1s forwards;
+}
+
+@-webkit-keyframes uptodo{
+    0%{
+        opacity: 0;
+        bottom: 0;
+    }
+    100%{
+        opacity: 1;
+        bottom: 50px;
+    }
+}
+
+@-webkit-keyframes downtodo{
+    0%{
+        opacity: 1;
+        bottom: 50px;
+    }
+    100%{
+        opacity: 0;
+        bottom: 0;
+    }
+}
+
+#todo-form {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#todo-form #todo-input {
+    width: 120px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #222;
+    outline: none;
+    color : #222;
+}
+
+#todo-list {
+    list-style: none;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#todo-list li span {
+    font-size: 12px;
+    color: #333;
+    font-weight: 600;
+    width: 70%;
+}
+
+#todo-list li button{
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+#todo-list li button:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+}

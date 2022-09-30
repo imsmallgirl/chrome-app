@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chrome</title>
+    <!-- font -->
+    <link href="https://webfontworld.github.io/Poppins/Poppins.css" rel="stylesheet">
+    <link href="https://webfontworld.github.io/sunn/SUIT.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- js -->
+    <script src="js/logout.js" defer></script>
+    <script src="js/clock.js" defer></script>
+    <script src="js/quote.js" defer></script>
+    <script src="js/background.js" defer></script>
+    <script src="js/todo.js" defer></script>
+</head>
+<body>
+    <div class="wrap">
+        <section id="saying">
+            <p id="saying-quote"></p>
+            <p id="saying-author"></p>
+        </section>
+        <section id="clock-hello">
+            <h1 id="clock_text"></h1>
+            <p id="hello_text"></p>
+            <form id="logout-form" action="/">
+                <button class="logout-btn" >LOGOUT</button>
+            </form>
+        </section>
+        <button id="todo-listbtn"><i class="xi-calendar-list"></i></button>
+        <section id="todo">
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="write ...">
+            </form>
+            <ul id="todo-list">
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
