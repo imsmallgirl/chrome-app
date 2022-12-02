@@ -41,4 +41,19 @@
 > random background
 * 새로고침할 때마다, 배경화면이 랜덤으로 바뀌도록 했습니다.
 <!-- 주석 -->
-<img width="700" src="https://im.ezgif.com/tmp/ezgif-1-2f05637fd5.gif">
+<img width="700" src="https://user-images.githubusercontent.com/108922353/205243479-93bc8c00-115a-4fe7-ac04-28ff92104f11.gif">
+
+
+> mini todo-list
+* 추가 기능과, 삭제 기능만 있는 작은 todo-list 입니다.
+* localStorage 를 사용해, 새로고침해도 todo-list가 초기화되지 않고 유지되도록 구현했습니다.
+<!-- 주석 -->
+<img width="700" src="https://user-images.githubusercontent.com/108922353/205245073-4cbf208c-02e8-4d7c-a868-926f89c0e6a0.gif">
+
+
+> Logout
+* 다시 로그인 페이지로 돌아갈 수 있도록 하는 logout 기능입니다.
+* localStorage에서 사용자 정보가 삭제되도록 구현했습니다.
+<!-- 주석 -->
+<img width="700" src="https://im.ezgif.com/tmp/ezgif-1-e7c5ef8905.gif">
+
